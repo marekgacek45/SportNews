@@ -2,8 +2,7 @@
 require(dirname(__DIR__) . '/includes/init.php');
 $conn = require(dirname(__DIR__) . '/includes/database.php');
 
-$news = News::getAll($conn);
-var_dump($news);
+
 ?>
 
 

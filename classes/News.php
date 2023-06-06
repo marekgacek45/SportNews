@@ -8,7 +8,7 @@ class News
 
     public static function getAll($conn)
     {
-        $sql = "SELECT * FROM news";
+        $sql = "SELECT * FROM news ORDER BY id DESC";
         $result = $conn->query($sql);
 
         return $result->fetchAll(PDO::FETCH_CLASS, 'News');

@@ -1,0 +1,54 @@
+.home {
+	&__latest {
+		display: flex;
+		&-last {
+			width: 50%;
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			&--opacity {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: black;
+				opacity: 0.5;
+			}
+			
+			&-text {
+				position: relative;
+				padding: 2em;
+				& h3 {
+					margin-bottom: 0.5em;
+					color: white;
+				}
+				& p {
+					color: grey;
+				}
+			}
+		}
+		&-rest {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			&-card {
+				padding: 1em;
+				display: flex;
+				transition: all .6s;
+				border-bottom: 1px solid black;
+
+				& img {
+					margin-left: 0.5em;
+					width: 200px;
+				}
+				&:hover {
+					margin-right: 1em;
+				}
+			}
+		}
+	}
+}
